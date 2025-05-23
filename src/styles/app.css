@@ -1,0 +1,152 @@
+/* Main application styles */
+
+/* Global styles */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+/* Isometric styling enhancements */
+.isometric-container {
+  perspective: 1000px;
+  transform-style: preserve-3d;
+}
+
+.isometric-grid {
+  transform-style: preserve-3d;
+}
+
+.isometric-cell {
+  position: absolute;
+  transform-style: preserve-3d;
+  transition: border-color 0.2s ease;
+}
+
+.isometric-element {
+  position: absolute;
+  transform-style: preserve-3d;
+  pointer-events: all;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Helper classes for isometric transformations */
+.iso-transform {
+  transform: rotateX(60deg) rotateZ(-45deg);
+  transform-style: preserve-3d;
+}
+
+/* Hover and selection states */
+.isometric-cell:hover {
+  border-color: rgba(255, 255, 255, 0.5) !important;
+}
+
+.isometric-element.selected {
+  outline: 2px solid #4299e1;
+  z-index: 1000 !important;
+}
+
+/* Draggable elements */
+.draggable {
+  cursor: grab;
+}
+
+.draggable:active {
+  cursor: grabbing;
+}
+
+/* Canvas interactions */
+.canvas-dragging {
+  cursor: grabbing !important;
+}
+
+.canvas-interactive {
+  cursor: pointer;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes scaleIn {
+  from { transform: scale(0.9); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+
+.fade-in {
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.scale-in {
+  animation: scaleIn 0.3s ease-out;
+}
+
+/* Tooltips */
+.custom-tooltip {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 12px;
+  pointer-events: none;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .isometric-container {
+    perspective: 800px;
+  }
+  
+  .mobile-controls {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+    display: flex;
+    gap: 10px;
+  }
+}
+
+/* Touch device optimizations */
+@media (pointer: coarse) {
+  .touch-target {
+    min-height: 44px;
+    min-width: 44px;
+  }
+}
+
+/* Scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+/* Dark mode scrollbars */
+.chakra-ui-dark ::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.chakra-ui-dark ::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.chakra-ui-dark ::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.5);
+}

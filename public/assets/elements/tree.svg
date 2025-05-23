@@ -1,0 +1,24 @@
+<svg width="64" height="96" viewBox="0 0 64 96" xmlns="http://www.w3.org/2000/svg">
+  <!-- Isometric Tree -->
+  <defs>
+    <linearGradient id="treeTrunk" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#8B4513" />
+      <stop offset="100%" stop-color="#A0522D" />
+    </linearGradient>
+    <linearGradient id="treeTop" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#228B22" />
+      <stop offset="100%" stop-color="#32CD32" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Tree Trunk -->
+  <polygon points="32,48 36,50 36,70 32,72 28,70 28,50" fill="url(#treeTrunk)" />
+  
+  <!-- Tree Top (Isometric Diamond) -->
+  <polygon points="32,16 48,24 32,32 16,24" fill="url(#treeTop)" />
+  <polygon points="32,24 48,32 32,40 16,32" fill="url(#treeTop)" />
+  <polygon points="32,32 48,40 32,48 16,40" fill="url(#treeTop)" />
+  
+  <!-- Tree Shadow -->
+  <ellipse cx="32" cy="72" rx="12" ry="6" fill="rgba(0,0,0,0.2)" />
+</svg>

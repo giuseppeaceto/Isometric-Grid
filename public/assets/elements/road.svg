@@ -1,0 +1,17 @@
+<svg width="64" height="32" viewBox="0 0 64 32" xmlns="http://www.w3.org/2000/svg">
+  <!-- Isometric Road -->
+  <defs>
+    <linearGradient id="roadSurface" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#444444" />
+      <stop offset="100%" stop-color="#555555" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Road Surface (Isometric Diamond) -->
+  <polygon points="32,0 64,16 32,32 0,16" fill="url(#roadSurface)" />
+  
+  <!-- Road Markings -->
+  <polygon points="30,14 34,16 30,18 26,16" fill="white" />
+  <polygon points="38,10 42,12 38,14 34,12" fill="white" />
+  <polygon points="22,18 26,20 22,22 18,20" fill="white" />
+</svg>

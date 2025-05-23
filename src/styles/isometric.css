@@ -1,0 +1,46 @@
+/* Isometric styling */
+
+.isometric-container {
+  perspective: 1000px;
+  transform-style: preserve-3d;
+}
+
+.isometric-grid {
+  transform-style: preserve-3d;
+}
+
+.isometric-cell {
+  position: absolute;
+  transform-style: preserve-3d;
+  transition: border-color 0.2s ease;
+}
+
+.isometric-element {
+  position: absolute;
+  transform-style: preserve-3d;
+  pointer-events: all;
+  transition: transform 0.2s ease;
+}
+
+/* Helper classes for isometric transformations */
+.iso-transform {
+  transform: rotateX(60deg) rotateZ(-45deg);
+  transform-style: preserve-3d;
+}
+
+/* Hover and selection states */
+.isometric-cell:hover {
+  border-color: rgba(255, 255, 255, 0.5) !important;
+}
+
+.isometric-element.selected {
+  outline: 2px solid #4299e1;
+  z-index: 1000 !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .isometric-container {
+    perspective: 800px;
+  }
+}

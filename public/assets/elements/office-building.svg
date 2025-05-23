@@ -1,0 +1,59 @@
+<svg width="128" height="192" viewBox="0 0 128 192" xmlns="http://www.w3.org/2000/svg">
+  <!-- Isometric Office Building -->
+  <defs>
+    <linearGradient id="officeFront" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#4682B4" />
+      <stop offset="100%" stop-color="#5F9EA0" />
+    </linearGradient>
+    <linearGradient id="officeSide" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#36729C" />
+      <stop offset="100%" stop-color="#468B93" />
+    </linearGradient>
+    <linearGradient id="officeTop" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#5F9EA0" />
+      <stop offset="100%" stop-color="#4682B4" />
+    </linearGradient>
+    <linearGradient id="officeGlass" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#87CEEB" />
+      <stop offset="100%" stop-color="#B0E0E6" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Building Top -->
+  <polygon points="64,32 96,48 64,64 32,48" fill="url(#officeTop)" />
+  
+  <!-- Building Front -->
+  <polygon points="64,64 64,160 32,144 32,48" fill="url(#officeFront)" />
+  
+  <!-- Building Side -->
+  <polygon points="64,64 96,48 96,144 64,160" fill="url(#officeSide)" />
+  
+  <!-- Glass Panels Front -->
+  <rect x="36" y="56" width="24" height="80" fill="url(#officeGlass)" />
+  
+  <!-- Glass Panels Side -->
+  <polygon points="68,64 92,52 92,132 68,144" fill="url(#officeGlass)" />
+  
+  <!-- Window Frames Front -->
+  <rect x="36" y="56" width="24" height="2" fill="#333" />
+  <rect x="36" y="72" width="24" height="2" fill="#333" />
+  <rect x="36" y="88" width="24" height="2" fill="#333" />
+  <rect x="36" y="104" width="24" height="2" fill="#333" />
+  <rect x="36" y="120" width="24" height="2" fill="#333" />
+  <rect x="36" y="136" width="24" height="2" fill="#333" />
+  
+  <rect x="36" y="56" width="2" height="80" fill="#333" />
+  <rect x="48" y="56" width="2" height="80" fill="#333" />
+  <rect x="60" y="56" width="2" height="80" fill="#333" />
+  
+  <!-- Window Frames Side -->
+  <line x1="68" y1="64" x2="92" y2="52" stroke="#333" stroke-width="1" />
+  <line x1="68" y1="80" x2="92" y2="68" stroke="#333" stroke-width="1" />
+  <line x1="68" y1="96" x2="92" y2="84" stroke="#333" stroke-width="1" />
+  <line x1="68" y1="112" x2="92" y2="100" stroke="#333" stroke-width="1" />
+  <line x1="68" y1="128" x2="92" y2="116" stroke="#333" stroke-width="1" />
+  
+  <line x1="74" y1="61" x2="74" y2="141" stroke="#333" stroke-width="1" />
+  <line x1="80" y1="58" x2="80" y2="138" stroke="#333" stroke-width="1" />
+  <line x1="86" y1="55" x2="86" y2="135" stroke="#333" stroke-width="1" />
+</svg>

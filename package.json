@@ -1,0 +1,37 @@
+{
+  "name": "isometric-scene-creator",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint .",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@chakra-ui/react": "^3.19.1",
+    "@dnd-kit/core": "^6.3.1",
+    "@dnd-kit/modifiers": "^9.0.0",
+    "@dnd-kit/utilities": "^3.2.2",
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.0",
+    "@react-three/fiber": "^9.1.2",
+    "framer-motion": "^12.12.2",
+    "html2canvas": "^1.4.1",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "three": "^0.176.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.25.0",
+    "@types/react": "^19.1.2",
+    "@types/react-dom": "^19.1.2",
+    "@vitejs/plugin-react": "^4.4.1",
+    "eslint": "^9.25.0",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "eslint-plugin-react-refresh": "^0.4.19",
+    "globals": "^16.0.0",
+    "vite": "^6.3.5"
+  }
+}

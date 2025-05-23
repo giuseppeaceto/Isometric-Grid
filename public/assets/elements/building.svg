@@ -1,0 +1,41 @@
+<svg width="128" height="128" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg">
+  <!-- Isometric Building -->
+  <defs>
+    <linearGradient id="buildingFront" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#8A9DB5" />
+      <stop offset="100%" stop-color="#6A7D95" />
+    </linearGradient>
+    <linearGradient id="buildingSide" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#5A6D85" />
+      <stop offset="100%" stop-color="#4A5D75" />
+    </linearGradient>
+    <linearGradient id="buildingTop" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#9AADC5" />
+      <stop offset="100%" stop-color="#8A9DB5" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Building Top -->
+  <polygon points="64,32 96,48 64,64 32,48" fill="url(#buildingTop)" />
+  
+  <!-- Building Front -->
+  <polygon points="64,64 64,112 32,96 32,48" fill="url(#buildingFront)" />
+  
+  <!-- Building Side -->
+  <polygon points="64,64 96,48 96,96 64,112" fill="url(#buildingSide)" />
+  
+  <!-- Windows Front -->
+  <rect x="40" y="56" width="8" height="8" fill="#C4E7FF" />
+  <rect x="40" y="72" width="8" height="8" fill="#C4E7FF" />
+  <rect x="40" y="88" width="8" height="8" fill="#C4E7FF" />
+  <rect x="52" y="56" width="8" height="8" fill="#C4E7FF" />
+  <rect x="52" y="72" width="8" height="8" fill="#C4E7FF" />
+  <rect x="52" y="88" width="8" height="8" fill="#C4E7FF" />
+  
+  <!-- Windows Side -->
+  <rect x="72" y="56" width="8" height="8" fill="#A4C7DF" />
+  <rect x="72" y="72" width="8" height="8" fill="#A4C7DF" />
+  <rect x="72" y="88" width="8" height="8" fill="#A4C7DF" />
+  <rect x="84" y="56" width="8" height="8" fill="#A4C7DF" />
+  <rect x="84" y="72" width="8" height="8" fill="#A4C7DF" />
+</svg>
